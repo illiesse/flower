@@ -1,0 +1,161 @@
+* {
+	margin : 0;
+}
+
+@font-face {
+	font-family: "WildFlowerBold";
+	src: url('font/WildFlowerBold.ttf');
+}
+
+/*<--- Homepage --->*/
+
+#homepage_img {
+	background: url("images/fdb.jpg");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	position: relative;
+	width: 98.6vw;
+	height: 100vh;
+}
+
+#logo {
+	font-family: "WildFlowerBold";
+	color: #517f41;
+	font-weight: bold;
+	font-size: 1.4em;
+	margin-left: 0.5%;
+}
+
+#barre_menu {
+	display: flex;
+	justify-content: space-between;
+	position: fixed;
+	width: 100%;
+	z-index: 1;
+}
+
+#menu {
+	padding-top: 0.2%;
+	margin-right: 1%;
+	display: flex;
+	justify-content: space-between;
+	width: 30%;
+}
+
+.link_color {
+	color: #517f41;
+	text-decoration: none;
+}
+
+h1 {
+	font-family: "Dancing Script";
+	color: white;
+	font-weight: 700;
+	position: absolute;
+	top: 5%;
+	left: 30%;
+	font-size: 5em!important;
+}
+
+#title_div {
+	width: 50vw;
+	height: 20vh;
+	background-color: #517f41;
+	opacity: 0.4;
+	border: dotted white;
+}
+
+#title_content {
+	position: absolute;
+	margin-left: 25%;
+	bottom: 42%;
+}
+
+/*<--- End Homepage --->*/
+
+
+/*<--- About us --->*/
+
+#about_us {
+	width: 98.6vw;
+	height: 100vh;
+}
+
+h2 {
+	font-family:'Courgette', cursive;
+	text-align: center;
+	font-size: 3em!important;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	color: #517f41;
+}
+
+.container {
+	padding: 2%!important;
+	margin: 0!important;
+	max-width: 98.8%!important;
+}
+
+.row>div {
+	text-align: center;
+}
+
+.fa-air-freshener, .fa-atom, .fa-envira {
+	font-size: 2em;
+	color: #517f41;
+	opacity: 0.5;
+	margin-bottom: 3%;
+}
+
+.lorem {
+	padding-left: 4%;
+	text-align: left;
+}
+
+#aboutus_img {
+	background: url("images/bg3.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	position: relative;
+	width: 96.5vw;
+	height: 27.8vh;
+}
+
+#aboutus_div {
+	width: 50vw;
+	height: 10vh;
+	background-color: #517f41;
+	opacity: 0.4;
+	border: dotted white;
+}
+
+#aboutus_content {
+	position: absolute;
+	margin-left: 25%;
+	bottom: 30%;
+}
+
+#aboutus_content>p {
+	font-family: "Dancing Script";
+	color: white;
+	font-weight: 700;
+	position: absolute;
+	top: 20%;
+	left: 30%;
+	font-size: 1.2em;
+}
+
+
+/*<--- End About us --->*/
+
+
+/*<--- Team --->*/
+
+#team{
+	width: 98.6vw;
+	height: 100vh; 
+}
+
+/*<--- End Team --->*/
