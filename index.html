@@ -3,21 +3,25 @@
 <head>
 	<title>Flower</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,500,600,700&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="vendor/glide-3.4.1/dist/css/glide.core.min.css">
+	<link rel="stylesheet" href="vendor/glide-3.4.1/dist/css/glide.theme.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/fancybox-master/dist/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="vendor/animate.css-master/animate.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body  data-spy="scroll" data-target="#barre_menu" data-offset="50">
 	<main>
 
 			<!-- Homepage -->
 		<header id="homepage_img">
-			<div id="elements_homepage">
-				<div id="fixed_bar"></div>
-<!-- 				<i class="fas fa-bars"></i> -->
+			<div id="elements_menu">
 				<nav id="barre_menu" class="hide_menu" class="navbar navbar-inverse navbar-fixed-top">
 					<span id="logo">Flower</span>
+					<div id="icon_bar"><i class="fas fa-bars"></i></div>
 					<div id="menu">
 						<a href="#homepage_img" class="link_color nav-link">Home</a>
 						<a href="#about_us" class="link_color nav-link">About US</a>
@@ -26,89 +30,163 @@
 						<a href="#contact" class="link_color nav-link">Contact</a>
 					</div>
 				</nav>
-				<div id="title_content">
-					<div id="title_div"></div>
+			</div>
+			<div id="div_title">
+				<div id="div_title_text">
 					<h1>Praeterea</h1>
 				</div>
-			</div>
+			</div>				
 		</header>
 			<!-- End Homepage -->
 
 			<!-- About us -->
-		<section id="about_us" class="container">
+		<section id="about_us">
 			<h2>About Us</h2>
-			<div class="row" id="about_bootstrap">
-				<div class="col-md-4 col-lg-4 col-xl-4 aboutus_item">
-					<i class="fas fa-air-freshener"></i>
-					<p class="lorem">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce</p>
-				</div>
-				<div class="col-md-4 col-lg-4 col-xl-4 aboutus_item">
-					<i class="fas fa-atom"></i>
-					<p class="lorem">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce</p>
-				</div>
-				<div class="col-md-4 col-lg-4 col-xl-4 aboutus_item">
-					<i class="fab fa-envira"></i>
-					<p class="lorem">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce</p>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 aboutus_item">
+						<i class="fas fa-air-freshener"></i>
+						<p class="lorem_one">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique</p>
+					</div>
+					<div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 aboutus_item">
+						<i class="fas fa-atom"></i>
+						<p class="lorem_two">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce</p>
+					</div>
+					<div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 aboutus_item">
+						<i class="fab fa-envira"></i>
+						<p class="lorem_three">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que</p>
+					</div>
 				</div>
 			</div>
 			<div id="aboutus_img">
-				<div id="aboutus_content">
-					<div id="aboutus_div"></div>
+				<div id="aboutus_img_text">
 					<p>Praeterea iter est quasdam res quas ex communi.</p>
-				</div>
-				
+				</div>				
 			</div>
 		</section>
 			<!-- End About us -->
 
-
 			<!-- Team -->
 		<section id="team">
 			<h2>Team</h2>
-			<!-- <div class="container-fluid"></div> -->
+			<div class="container-fluid">
 				<div class="row" id="team_boostrap">
-					<div class="col-md-3 col-lg-3 col-xl-3 member">
+					<div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 member">
 						<div class="team_image">
 							<img src="images/team/hp1.png">
-							<div class="green_veil">					
-								<i class="fab fa-facebook-f"></i>
-								<i class="fab fa-twitter"></i>
-								<i class="fab fa-instagram"></i>
+							<div class="green_veil">
+								<div class="icons">					
+									<i class="fab fa-facebook-f"></i>
+									<i class="fab fa-twitter"></i>
+									<i class="fab fa-instagram"></i>
+								</div>
 							</div>
 						</div>
 						<h3>RYLAN FRANECKI</h3>
 						<p class="ambitioni">AMBITIONI</p>
 						<p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500.</p>
 					</div>
-					<div class="col-md-3 col-lg-3 col-xl-3 member">
-						<img src="images/team/hp3.png">
+					<div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 member">
+						<div class="team_image">
+							<img src="images/team/hp3.png">					
+							<div class="green_veil">
+								<div class="icons">					
+									<i class="fab fa-facebook-f"></i>
+									<i class="fab fa-twitter"></i>
+									<i class="fab fa-instagram"></i>
+								</div>
+							</div>
+						</div>
 						<h3>HASSAN BOGISICH</h3>
 						<p class="ambitioni">AMBITIONI</p>
 						<p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500.</p>
 					</div>
-					<div class="col-md-3 col-lg-3 col-xl-3 member">
-						<img src="images/team/hp2.png">
+					<div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 member">
+						<div class="team_image">
+							<img src="images/team/hp2.png">
+							<div class="green_veil">
+								<div class="icons">					
+									<i class="fab fa-facebook-f"></i>
+									<i class="fab fa-twitter"></i>
+									<i class="fab fa-instagram"></i>
+								</div>
+							</div>
+						</div>
 						<h3>SABINE RENAUD</h3>
 						<p class="ambitioni">AMBITIONI</p>
 						<p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500.</p>
 					</div>
-					<div class="col-md-3 col-lg-3 col-xl-3 member">
-						<img src="images/team/hp4.png">
+					<div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 member">
+						<div class="team_image">
+							<img src="images/team/hp4.png">
+							<div class="green_veil">
+								<div class="icons">					
+									<i class="fab fa-facebook-f"></i>
+									<i class="fab fa-twitter"></i>
+									<i class="fab fa-instagram"></i>
+								</div>
+							</div>
+						</div>
 						<h3>ANNA SLIM</h3>
 						<p class="ambitioni">AMBITIONI</p>
 						<p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500.</p>
 					</div>
 				</div>
-			<!-- </div> -->
+			</div>
+			<div id="slider">
+				<div class="container-fluid">
+					<div class="glide">
+		  				<div class="glide__track" data-glide-el="track">
+						    <ul class="glide__slides">
+						    	<li class="glide__slide"><img src="images/cap1.png"></li>
+						    	<li class="glide__slide"><img src="images/cap2.png"></li>
+						      	<li class="glide__slide"><img src="https://via.placeholder.com/300"></li>
+						     	<li class="glide__slide"><img src="https://via.placeholder.com/300"></li>
+						      	<li class="glide__slide"><img src="https://via.placeholder.com/300"></li>
+						    </ul>
+		  				</div>
+		  				<div class="glide__arrows" data-glide-el="controls">
+					    	<button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+					    	<button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+  						</div>
+					</div>
+				</div>
+			</div>
 		</section>
 			<!-- End Team -->
 
+			<!-- Quams -->
+		<section id="quams">
+			<h2>Quams</h2>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 quams_img"><a data-fancybox="gallery" href="images/fleur/f1_big.png"><img src="images/fleur/f1.png"></a></div>
+					<div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 quams_img"><a data-fancybox="gallery" href="images/fleur/f2_big.jpg"><img src="images/fleur/f2.jpg"></a></div>
+					<div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 quams_img"><a data-fancybox="gallery" href="images/fleur/f3_big.jpg"><img src="images/fleur/f3.jpg"></a></div>
+					<div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 quams_img"><a data-fancybox="gallery" href="images/fleur/f5_big.jpg"><img src="images/fleur/f5.jpg"></a></div>
+					<div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 quams_img"><a data-fancybox="gallery" href="images/fleur/f6_big.jpg"><img src="images/fleur/f6.jpg"></a></div>
+					<div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 quams_img"><a data-fancybox="gallery" href="images/fleur/f7_big.jpg"><img src="images/fleur/f7.jpg"></a></div>
+					<div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 quams_img"><a data-fancybox="gallery" href="images/fleur/f8_big.jpg"><img src="images/fleur/f8.jpg"></a></div>
+					<div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 quams_img"><a data-fancybox="gallery" href="images/fleur/f9_big.jpg"><img src="images/fleur/f9.jpg"></a></div>
+					<div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 quams_img"><a data-fancybox="gallery" href="images/fleur/f10_big.jpg"><img src="images/fleur/f10.jpg"></a></div>
+				</div>
+			</div>
+		</section>
+			<!-- End Quams -->
+
+		<footer id="contact">
+			<div id="end">
+				<p class="animated hinge">Contact</p>
+			</div>
+		</footer>
 
 
 	</main>
 	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="vendor/fancybox-master/dist/jquery.fancybox.min.js"></script>
 	<script src="https://kit.fontawesome.com/29ad4da9d1.js" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-	<script type="text/javascript" src="script.js"></script>
+	<script src="vendor/glide-3.4.1/dist/glide.min.js"></script>
+	<script src="js/script.js"></script>
 </body>
 </html>
